@@ -3,19 +3,20 @@
 ## Overview
 This Jupyter Notebook provides a comprehensive approach to transcribing audio content and performing speaker diarization using a combination of powerful modules. The key modules used in this notebook are:
 
-Whisper: A cutting-edge automatic speech recognition (ASR) system developed by OpenAI.
-Resemblyzer: A library for voice similarity analysis and speaker diarization.
-Librosa: A Python package for music and audio analysis.
-YouTube_DL: A tool for downloading YouTube videos and extracting audio content.
-Datasets: A library for managing and accessing datasets.
-Pydub: A high-level audio processing library.
-SpectralCluster: A spectral clustering implementation for speaker diarization.
+- **Whisper**: A cutting-edge automatic speech recognition (ASR) system developed by OpenAI.
+- **Resemblyzer**: A library for voice similarity analysis and speaker diarization.
+- **Librosa**: A Python package for music and audio analysis.
+- **YouTube_DL**: A tool for downloading YouTube videos and extracting audio content.
+- **Datasets**: A library for managing and accessing datasets.
+- **Pydub**: A high-level audio processing library.
+- **SpectralCluster**: A spectral clustering implementation for speaker diarization.
 
 ## Installation
 Make sure to install the required modules before running the notebook. You can do this by executing the following commands:
 
-### bash
-Copy code
+```
+bash
+
 !pip install git+https://github.com/openai/whisper.git
 !pip install Resemblyzer
 !sudo apt update && sudo apt install ffmpeg
@@ -23,7 +24,8 @@ Copy code
 !pip install youtube_dl
 !pip install datasets
 !pip install pydub
-!pip3 install spectralcluster
+!pip3 install spectralcluster 
+```
 
 ## Approach
 The transcription and speaker diarization process involves several steps, each executed by different modules:
